@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Puzzle Mapy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://rawgit.com/mapbox/leaflet-image/gh-pages/leaflet-image.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="map-section">
+        <div id="map"></div>
+        <p id="coordinates">Aktualne współrzędne: </p>
+    </div>
+    <div class="raster-section">
+        <img id="rasterImage" src="" alt="Raster Image">
+        <div id="puzzle-container"></div>
+    </div>
+
+</div>
+<button onclick="locateMe()">Moja lokalizacja</button>
+<button onclick="downloadMap()">Pobierz Mapę</button>
+<button onclick="initializePuzzle()">Puzzle</button>
+
+
+<script src="script.js"></script>
+</body>
+</html>
