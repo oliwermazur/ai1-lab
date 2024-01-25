@@ -1,6 +1,6 @@
 const WeatherApp = class {
     constructor(apiKey, resultsBlockSelector) {
-        this.apiKey = '7ded80d91f2b280ec979100cc8bbba94';
+        this.apiKey = 'ef1fb7bbbd23398de6b84fdb5f4be803';
         this.currentWeatherLink = "https://api.openweathermap.org/data/2.5/weather?q={query}&appid={apiKey}&units=metric&lang=pl";
         this.forecastLink = "https://api.openweathermap.org/data/2.5/forecast?q={query}&appid={apiKey}&units=metric&lang=pl";
         this.iconLink = "https://openweathermap.org/img/wn/{iconName}@2x.png";
@@ -112,7 +112,7 @@ const WeatherApp = class {
     }
 }
 
-document.weatherApp = new WeatherApp('7ded80d91f2b280ec979100cc8bbba94', "#weather-results-container");
+document.weatherApp = new WeatherApp('ef1fb7bbbd23398de6b84fdb5f4be803', "#weather-results-container");
 
 document.querySelector("#checkButton").addEventListener("click", function() {
     const query = document.querySelector("#locationInput").value;
